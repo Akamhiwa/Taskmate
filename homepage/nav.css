@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: poppins , sans-serif;
+}
+main{
+    padding-top: 52px;
+}
+
+/* navber header*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C2D30;
+    padding: 0px 64px;
+    height: 52px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.navbar li , .navbar a{
+    list-style: none;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a::after {
+    content:'';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background-color: dodgerblue;
+    border-radius: 13px;
+    transition: all 0.3s;
+}
+.navbar li a:hover::after{
+    width: 100%;  
+}
+.leftside-navbar {
+    display: flex;
+    align-items: center;
+}
+.leftside-navbar span{
+    font-size: 18px;
+}
+.rightside-navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    transition: 0.4s all;
+}
+
+.hamburger-menu{
+    cursor: pointer;
+    display:none;
+}
+.bar{
+    width: 21px;
+    height: 3px;
+    border-radius: 12px;
+    background-color: white;
+    display: block;
+    margin: 5px 0px ;
+    transition: all 0.3s ease;
+}
+@media (max-width:1024px){
+    .navbar{
+        padding: 5px 32px;
+    }
+}
+ 
+@media(max-width:768px){
+    .hamburger-menu{
+        display: block;
+    }
+    .navbar{
+        padding: 5px 16px;
+    }
+    .hamburger-menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .rightside-navbar ul{
+        flex-direction: column;
+       gap: 62px;
+        background-color: #2c2d30e2;
+        position: fixed;
+        left: 110%;
+        top: 52px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .rightside-navbar  li a{
+    font-size: 20.8px;
+    }
+    .rightside-navbar ul.active{ 
+        left: 0;
+    }
+}

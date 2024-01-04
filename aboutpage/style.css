@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins , sans-serif;
+}
+.about-container{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 52px);
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 80px 64px 120px 64px;
+    overflow: hidden;
+    
+}
+.texts-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 50%;
+gap: 16px;
+
+
+}
+.texts-container h1{
+    font-size: 64px;
+    color: #2C2D30;
+    width: 100%;
+    font-weight: bold;
+
+}
+.texts-container p{
+    text-align: justify;
+    color: #2C2D30;
+    font-size: 16px;
+}
+.texts-container a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 30%;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #7B5FF1 10%, #3b86e7 100%);
+    transition: 0.3s all ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ width: 50%;
+
+}
+.image-container img{
+    width: 650px;
+    border-radius: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 64px 140px 64px;
+    gap: 62px;
+    background-color: #f4f4f4;
+
+
+}
+.cards-container{
+display: flex;
+align-content: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 65px;
+width: 100%;
+
+}
+.card{
+width: 25%;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+@media(max-width:1024px){
+    .about-container{
+flex-direction: column-reverse;
+gap: 12px;
+height: 100%;
+    }
+    .texts-container{
+width: 100%;
+align-items: center;
+text-align: center;
+    }
+    .texts-container a{
+        width: 100%;
+    }
+    .image-container{
+        width: 100%;
+    }
+    .image-container img{
+        width: 600px;
+    }
+    .card{
+        width: 40%;
+    }
+}
+@media(max-width:768px){
+    .texts-container h1{
+        font-size: 44px;
+    }
+    section{
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .card{
+        width: 100%;
+    }
+   .image-container img{
+    width: 550px;
+   }
+}

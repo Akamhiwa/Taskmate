@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+section{
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	
+}
+.generator-container {
+	width: 100%;
+	max-width: 650px;
+	color: white;
+	background-color: #2C2D30;
+	padding: 2rem 1rem;
+	border-radius: 12px;
+}
+h1{
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+.Password-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	border: 1px solid white;
+	border-radius: 30px;
+	padding: 0px 20px;
+}
+.Password-wrap input{
+border: none;
+outline: none;
+background-color: transparent;
+height: 40px;
+width: 100%;
+font-size: 20px;
+color: white;
+}
+
+.Password-wrap button{
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	
+}
+.input-container{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 24px;
+	margin-bottom: .5rem;
+}
+
+input[type="number"]{
+
+	background-color: transparent;
+	outline: none;
+border: 1px solid white;
+color: white;
+border-radius: 30px;
+	text-align: center;
+	margin-right:-20px ;
+}
+.generate-btn{
+	border: none;
+	outline: none;
+width: 50%;
+font-size: 1rem;
+
+	padding: 10px 20px;
+	border-radius: 23px;
+	margin-top: .5rem;
+}
+

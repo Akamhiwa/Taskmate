@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins sans-serif ;
+}
+.container-app{
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+
+}
+.todo-app{
+max-width: 540px;
+width: 100%;
+background-color: #2C2D30;
+margin: 100px auto 20px;
+padding: 40px 30px 70px;
+border-radius: 10px;
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    margin-bottom: 20px;
+color: white;
+}
+.title img{
+width: 30px;
+}
+.add-to-do{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: #edeef0;
+    margin-bottom: 30px;
+   
+}
+.input-box{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding-left: 15px;
+
+}
+button{
+    padding: 16px 50px;
+    border: none;
+    outline: none;
+    background-color: #ff5945;
+    border-radius: 30px;
+    color: white;
+    font-size:16px;
+    cursor: pointer;
+   
+}
+
+.user-list-container li{
+    list-style: none;
+    padding: 12px 8px 12px  50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.user-list-container li::before{
+    content: '';
+    width: 28px;
+    height: 28px;
+    background:url(./imgs/unchecked-25.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    border-radius: 50%;
+}
+.delete-btn {
+    width: 28px;
+    position: absolute;
+    right: 0;
+ 
+}
+
+.user-list-container li.checked{
+    color: #d0c9c9;
+    text-decoration: line-through;
+}
+.user-list-container li.checked::before{
+    background-image: url(./imgs/check.png);
+}
