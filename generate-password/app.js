@@ -45,14 +45,7 @@ generateBtn.addEventListener("click", () => {
     showPassword.value = randomPassword;
 
 });
-copy.addEventListener("click", async ()=>{
-    try {
-        
-        await navigator.clipboard.writeText(showPassword.value);
-        console.log('Text copied to clipboard');
-        // You can add additional feedback to the user, like displaying a tooltip or changing the icon color
-      } catch (err) {
-        console.error('Unable to copy text to clipboard', err);
-        // Handle the error, such as displaying an error message to the user
-      }
+copy.addEventListener("click",  ()=>{
+       navigator.clipboard.writeText(showPassword.value);
+        alert('Text copied to clipboard');      
   })
